@@ -1,0 +1,34 @@
+﻿@{
+    ViewBag.Title = "Index";
+
+    var posts = ViewData["Posts"] as List<HomeWork5.Models.Post>;
+}
+
+<h2>Index</h2>
+
+<div id="form" action="Publish" method="post">
+    <input type="text" name="name" id="name" placeholder="Имя"/>
+    <input type="text" name="text" id="text" placeholder="Текст"/>
+    <input type="submit" value="Опубликовать" id="button" />
+</div>
+
+<table>
+    <caption>Делись мыслями здесь</caption>
+    <thead>
+        <tr>
+            <th>От кого</th>
+            <th>Что</th>
+        </tr>
+    </thead>
+    <tbody id="tableBody">
+        @foreach (var post in posts)
+        {
+            <tr>
+                <td>@post.Name</td>
+                <td>@post.Text</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+

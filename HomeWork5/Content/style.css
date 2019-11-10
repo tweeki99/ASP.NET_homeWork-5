@@ -1,0 +1,57 @@
+﻿table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: inherit;
+    border: 3px solid black;
+    text-align: center;
+}
+
+thead th:nth-child(1) {
+    width: 20%;
+}
+
+thead th:nth-child(2) {
+    width: 80%;
+}
+
+th, td {
+    padding: 20px;
+}
+
+html {
+    font-family: 'helvetica neue', helvetica, arial, sans-serif;
+}
+
+thead th {
+    font-family: 'Rock Salt', cursive;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+th {
+    letter-spacing: 2px;
+}
+
+td {
+    letter-spacing: 1px;
+}
+
+tbody td {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: dimgray;
+}
+
+tbody tr:nth-child(even) {
+    background-color: gray;
+}
+
+caption {
+    text-align: center;
+}
